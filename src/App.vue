@@ -10,11 +10,12 @@
 
 <script>
   import axios from "axios";
+  import env from "./env";
   import SearchBar from "./components/SearchBar";
   import VideoList from "./components/VideoList";
   import VideoDetail from "./components/VideoDetail";
 
-  const API_KEY = "AIzaSyDEunT6kgL7GFlk9IYMPxCDoGzazygq68k";
+  const {API_KEY} = env;
   const youTubeEndpoint = "https://www.googleapis.com/youtube/v3/search";
 
   export default {
